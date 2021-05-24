@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Playfair Display', serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective:1000px;
+   
+}
+.container{
+   background-color: none;
+    width:43%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    background-color: none;
+    min-height: 88vh;
+    width: 30rem;
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    box-shadow: 0 20px 20px rgba(0,0,0, 0.2),0px 0px 50px rgba(0,0,0, 0.2) ; 
+    transform: preserve-3d;
+}
+.sneaker{
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-perspective: 1000;
+}
+.sneaker img{
+    width:20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+    
+}
+.circle{
+    height:12rem ;
+    width:12rem;
+    background: linear-gradient(
+        to right,
+        rgba(214, 28, 183, 0.87),rgba(51, 170, 184, 0.75)
+    );
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+}
+.info{
+    -webkit-perspective: 1000;
+}
+.info h1{
+
+    font-size: 2.5rem ;
+    transition: all 0.75s ease-out;
+    color: #363535;
+}
+.info h3{
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+.sizes{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+
+}
+.sizes button{
+    padding: 0.5rem 1.2rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    border-radius: 30px;
+    cursor:pointer;
+    font-weight: bold;
+    color: #585858;
+
+}
+button.active{
+    background: #2f83aa;
+    color: wheat;
+    
+}
+.purchase{
+    margin-top: 3rem;
+    transition: all 0.75s ease-out;
+}
+.purchase button{
+    transition: all 0.75s ease-out;
+    width: 100%;
+    padding: 1rem 0rem;
+    background:#2485b3 ;
+    border:none;
+    color:white;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bolder;
+}
